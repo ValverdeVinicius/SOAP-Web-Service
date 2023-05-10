@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<body>
+    <h1>Selecione o Tema</h1>
+    <form method="POST">
+        {% csrf_token %} <!-- evita ataques do tipo Cross-Site Request Forgery -->
+        {{ form }}
+        <input type="submit" value="Exibir">
+    </form>
+</body>
+</html>
